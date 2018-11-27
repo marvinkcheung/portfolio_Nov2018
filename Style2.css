@@ -1,0 +1,546 @@
+html,body{
+	margin:0;
+	height:100%;
+	width:100%;
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	margin:0;
+	padding:0;
+}
+h1 {
+	font-family: minion-3-display, serif;
+	font-style: normal;
+	font-weight:700;
+}
+h2, h3, h4, p, small, ul, ol, b, i {
+	font-family:helvetica, sans-serif;
+}
+img {
+	width:100%;
+}
+a {
+	color:white;
+}
+hr {
+	border-top: 3px solid black;
+}
+.black{
+	color:black;
+}
+
+@media only screen and (min-width: 0px) {
+	h1{
+		font-size:35pt;
+		line-height:100%;
+		margin:0 0 3vh 0;
+	}
+	h3{
+		font-size:10pt;
+	}
+	h4{
+		font-size:9.5pt;
+		font-weight:400;
+		line-height:100%;
+		color:#58595b;
+		padding-bottom:2vh;
+	}
+	ul, ol{
+		font-size:13pt;
+		line-height:130%;
+	}
+	p{
+		font-size:13pt;
+		line-height:150%;
+	}
+	i{
+		text-align:right;
+	}
+	figcaption{
+		padding:2vh 0 3.5vh 0;
+	}
+	#Logo{
+		height:10vh;
+		width:auto;
+		padding:0 0 1vh 0;
+	}
+	.Space{
+		padding-bottom:15vh;
+	}
+	.SpaceTempest{
+		padding-bottom:13vh;
+	}
+	.Background{
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+		margin:1vh 0 7vh 0;
+	}
+	.Border1{
+		border-bottom: dotted 1px grey;
+	}
+	.Border2{
+		border-bottom: dotted 1px grey;
+	}
+	.Border3{
+		border-bottom: dotted 1px grey;
+	}
+	.Border4{
+		border-bottom: dotted 1px grey;
+	}
+	.Border5{
+		border-bottom: dotted 1px grey;
+	}
+	.BackgroundText{
+		padding: 1vh 1vw 1vh 1vw;
+	}
+	.HomeH1{
+		padding-top: 2vh;
+		font-size:20pt;
+		line-height: 120%
+	}
+	.HomeP{
+		font-size:9.5pt;
+		line-height: 130%
+	}
+	.Navbar{
+		background-color:white;
+		position:fixed;
+		height:auto;
+		width: auto;
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	}
+	.Grid-8{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap:2.3vw;
+		grid-row-gap:7vh;
+		margin:0;
+		padding:2vh 6vw 0 6vw;
+	}
+	.Column-1-3{
+		grid-column:1/3;
+		place-self:center;
+	}
+	.Column-3-5{
+		grid-column:3/5;
+		place-self:center;
+	}
+	.Span-2{
+		grid-column:span 8;
+	}
+	.Span-4{
+		grid-column:span 8;
+	}
+	.Span-6{
+		grid-column:span 8;
+	}
+	.Span-8{
+		grid-column:span 8;
+	}
+	.FooterArea{
+		background-color:black;
+	}
+	.Footer{
+		grid-column:1/9;
+		background-color:black;
+		color:white;
+		padding:0 6vw 0 6vw;
+	}
+	.Footer > p{
+		font-size: 10pt;
+		line-height: 150%;
+	}
+	.AlignEnd{
+		align-self:end;
+	}
+}
+
+@media only screen and (min-width: 400px) {
+	h1{
+		font-size:35pt;
+		line-height:100%;
+		margin:0 0 3vh 0;
+	}
+	h3{
+		font-size:10pt;
+	}
+	h4{
+		font-size:9.5pt;
+		font-weight:400;
+		line-height:100%;
+		color:#58595b;
+		padding-bottom:2vh;
+	}
+	ul, ol{
+		font-size:13pt;
+	}
+	p{
+		font-size:13pt;
+		line-height:150%;
+	}
+	i{
+		text-align:right;
+	}
+	figcaption{
+		padding:2vh 0 3.5vh 0;
+	}
+	#Logo{
+		height:10vh;
+		width:auto;
+		padding:0 0 1vh 0;
+	}
+	.Space{
+		padding-bottom:15vh;
+	}
+	.SpaceTempest{
+		padding-bottom:10vh;
+	}
+	.Background{
+		display:grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 0;
+		margin:1vh 0 7vh 0;
+	}
+	.Border1{
+		border-right:dotted 1px grey;
+		border-bottom: dotted 1px grey;
+	}
+	.Border2{
+		border-bottom: dotted 1px grey;
+	}
+	.Border3{
+		border-right: dotted 1px grey;
+		border-bottom: dotted 1px grey;
+	}
+	.Border4{
+		border-bottom: dotted 1px grey;
+	}
+	.Border5{
+		border-right: dotted 1px grey;
+	}
+	.BackgroundText{
+		padding: 1vh 1vw 1vh 1vw;
+	}
+	.HomeH1{
+		padding-top: 2vh;
+		font-size:20pt;
+		line-height: 120%
+	}
+	.HomeP{
+		font-size:9.5pt;
+		line-height: 130%
+	}
+	.Navbar{
+		background-color:white;
+		position:fixed;
+		height:auto;
+		width: auto;
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	}
+	.Grid-8{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap:2.3vw;
+		grid-row-gap:7vh;
+		margin:0;
+		padding:2vh 15vw 0 15vw;
+	}
+	.Column-1-3{
+		grid-column:1/3;
+		place-self:center;
+	}
+	.Column-3-5{
+		grid-column:3/5;
+		place-self:center;
+	}
+	.Span-2{
+		grid-column:span 8;
+	}
+	.Span-4{
+		grid-column:span 8;
+	}
+	.Span-6{
+		grid-column:span 8;
+	}
+	.Span-8{
+		grid-column:span 8;
+	}
+	.FooterArea{
+		background-color:black;
+	}
+	.Footer{
+		grid-column:2/8;
+		background-color:black;
+		color:white;
+		padding:0 6vw 0 6vw;
+	}
+	.Footer > p{
+		font-size: 10pt;
+		line-height: 150%;
+	}
+	.AlignEnd{
+		align-self:end;
+	}
+}
+
+
+@media only screen and (min-width: 1100px) {
+	h1{
+		font-size:40pt;
+		line-height:100%;
+		margin:0 0 3vh 0;
+	}
+	h3{
+		font-size:10pt;
+	}
+	h4{
+		font-size:9.5pt;
+		font-weight:400;
+		line-height:100%;
+		color:#58595b;
+		padding-bottom:2vh;
+	}
+	ul, ol{
+		font-size:13pt;
+	}
+	p{
+		font-size:13pt;
+		line-height:150%;
+	}
+	i{
+		text-align:right;
+	}
+	figcaption{
+		padding:2vh 0 3.5vh 0;
+	}
+	#Logo{
+		height:10vh;
+		width:auto;
+		padding:0 0 1vh 0;
+	}
+	.Space{
+		padding-bottom:15vh;
+	}
+	.SpaceTempest{
+		padding-bottom:7vh;
+	}
+	.Background{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 0;
+		margin:1vh 0 7vh 0;
+	}
+	.Border1{
+		border-bottom: dotted 1px grey;
+	}
+	.Border2{
+		border-left: dotted 1px grey;
+		border-right: dotted 1px grey;
+		border-bottom: dotted 1px grey;
+	}
+	.Border3{
+		border-bottom: dotted 1px grey;
+	}
+	.Border4{
+		border:none;
+	}
+	.Border5{
+		border-left: dotted 1px grey;
+		border-right: dotted 1px grey;
+	}
+	.BackgroundText{
+		padding: 1vh 1vw 1vh 1vw;
+	}
+	.HomeH1{
+		padding-top: 2vh;
+		font-size:20pt;
+		line-height: 120%
+	}
+	.HomeP{
+		font-size:9.5pt;
+		line-height: 130%
+	}
+	.Navbar{
+		background-color:white;
+		position:fixed;
+		height:auto;
+		width: auto;
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	}
+	.Grid-8{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap:2.3vw;
+		grid-row-gap:7vh;
+		margin:0;
+		padding:2vh 15vw 0 15vw;
+	}
+	.Column-1-3{
+		grid-column:1/3;
+		place-self:center;
+	}
+	.Column-3-5{
+		grid-column:3/5;
+		place-self:center;
+	}
+	.Span-2{
+		grid-column:span 2;
+	}
+	.Span-4{
+		grid-column:span 4;
+	}
+	.Span-6{
+		grid-column:span 6;
+	}
+	.Span-8{
+		grid-column:span 8;
+	}
+	.FooterArea{
+		background-color:black;
+	}
+	.Footer{
+		grid-column:2/8;
+		background-color:black;
+		color:white;
+		padding:0 6vw 0 6vw;
+	}
+	.Footer > p{
+		font-size: 10pt;
+		line-height: 150%;
+	}
+	.AlignEnd{
+		align-self:end;
+	}
+}
+
+@media only screen and (min-width: 1450px) {
+	h1{
+		font-size:40pt;
+		line-height:100%;
+		margin:0 0 3vh 0;
+	}
+	h3{
+		font-size:10pt;
+	}
+	h4{
+		font-size:9.5pt;
+		font-weight:400;
+		line-height:100%;
+		color:#58595b;
+		padding-bottom:2vh;
+	}
+	ul, ol{
+		font-size:13pt;
+	}
+	p{
+		font-size:13pt;
+		line-height:150%;
+	}
+	i{
+		text-align:right;
+	}
+	figcaption{
+		padding:2vh 0 3.5vh 0;
+	}
+	#Logo{
+		height:10vh;
+		width:auto;
+		padding:0 0 1vh 0;
+	}
+	.Space{
+		padding-bottom:15vh;
+	}
+	.SpaceTempest{
+		padding-bottom:7vh;
+	}
+	.Background{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 0;
+		margin:1vh 0 7vh 0;
+	}
+	.Border1{
+		border-bottom: dotted 1px grey;
+	}
+	.Border2{
+		border-left: dotted 1px grey;
+		border-right: dotted 1px grey;
+		border-bottom: dotted 1px grey;
+	}
+	.Border3{
+		border-bottom: dotted 1px grey;
+	}
+	.Border4{
+		border:none;
+	}
+	.Border5{
+		border-left: dotted 1px grey;
+		border-right: dotted 1px grey;
+	}
+	.BackgroundText{
+		padding: 1vh 1vw 1vh 1vw;
+	}
+	.HomeH1{
+		padding-top: 2vh;
+		font-size:20pt;
+		line-height: 120%
+	}
+	.HomeP{
+		font-size:9.5pt;
+		line-height: 130%
+	}
+	.Navbar{
+		background-color:white;
+		position:fixed;
+		height:auto;
+		width: auto;
+		box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+	}
+	.Grid-8{
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-column-gap:2.3vw;
+		grid-row-gap:7vh;
+		margin:0;
+		padding:2vh 23vw 0 23vw;
+	}
+	.Column-1-3{
+		grid-column:1/3;
+		place-self:center;
+	}
+	.Column-3-5{
+		grid-column:3/5;
+		place-self:center;
+	}
+	.Span-2{
+		grid-column:span 2;
+	}
+	.Span-4{
+		grid-column:span 4;
+	}
+	.Span-6{
+		grid-column:span 6;
+	}
+	.Span-8{
+		grid-column:span 8;
+	}
+	.FooterArea{
+		background-color:black;
+	}
+	.Footer{
+		grid-column:2/8;
+		background-color:black;
+		color:white;
+		padding:0 6vw 0 6vw;
+	}
+	.Footer > p{
+		font-size: 10pt;
+		line-height: 150%;
+	}
+	.AlignEnd{
+		align-self:end;
+	}
+}
